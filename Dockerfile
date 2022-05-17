@@ -11,6 +11,8 @@ RUN pip3 install scikit-learn
 RUN pip3 install jedi==0.17.2
 RUN pip3 install jupyterlab
 RUN pip3 install graphviz
+RUN pip3 install msticpy
+RUN pip3 install humiolib
 RUN rm -rf ~/.cache/pip/*
 WORKDIR /notebook
 ENTRYPOINT ["jupyter-lab","--allow-root","--no-browser","--ip=0.0.0.0"]
